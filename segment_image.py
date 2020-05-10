@@ -33,8 +33,8 @@ def get_lines(img):
 
     peaks, _ = scipy.signal.find_peaks(img_row_sum,
                                        # height=40000,
-                                       distance=50,
-                                       prominence=max(total / 3000, 18000)
+                                       distance=70,
+                                       prominence=max(total / 4000, 18000)
                                        )
 
     return peaks
